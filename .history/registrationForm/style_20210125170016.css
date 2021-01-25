@@ -1,0 +1,12 @@
+.formFace {
+    padding: 10px 0;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 12px black;
+   -webkit-box-shadow: 0 0 12px black;
+   box-shadow: 0 0 12px black;
+}
+  .formMOVE {
+   margin-top: 10%;
+   
+ 
+  }

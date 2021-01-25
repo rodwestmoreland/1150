@@ -1,0 +1,15 @@
+nav{-moz-box-shadow: 0 0 12px black;
+   -webkit-box-shadow: 0 0 12px black;
+   box-shadow: 0 0 12px black;
+   border-radius: 10px;
+}
+.formFace {
+    padding: 10px 0;
+    background-color: #fff;
+    
+}
+  .formMOVE {
+   margin-top: 10%;
+   
+ 
+  }
