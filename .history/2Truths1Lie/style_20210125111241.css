@@ -1,0 +1,23 @@
+h2{
+    color: maroon;
+    font-style: italic;
+}
+.info{
+    font-weight: 500;
+    color: lightgray;
+    padding: .5em;
+    width: 50%;
+}
+
+.one{
+    
+   
+    background-color: lightsalmon;
+}
+.two{
+    background-color: lightseagreen;
+}
+.three{
+    background-color: lightslategrey;
+}
+

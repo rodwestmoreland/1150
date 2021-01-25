@@ -1,0 +1,41 @@
+h2 {
+    color: maroon;
+    font-style: italic;
+    text-align: center;
+}
+
+.info {
+    font-weight: 500;
+    color: linen;
+    
+    width: 50%;
+    margin: 0 auto;
+}
+
+.info p {
+    color: maroon;
+}
+
+.one, .two, .three{
+    border: solid 5px;
+    padding: .55em;
+    border-radius: 1em;
+}
+.one {
+    background-color: lightsalmon;
+    
+}
+
+.two {
+    background-color: lightseagreen;
+    
+}
+
+.three {
+    background-color: lightslategrey;
+    
+    
+}
+.three p{
+    color: whitesmoke;
+}

@@ -1,0 +1,19 @@
+h2{
+    color: maroon;
+    font-style: italic;
+}
+.info{
+    font-weight: 500;
+    color: lightgray;
+    padding: .5em;
+}
+.one{
+    
+   
+    background-color: lightsalmon;
+}
+.two{
+    background-color: lightseagreen;
+}
+
+
