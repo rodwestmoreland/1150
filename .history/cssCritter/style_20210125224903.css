@@ -1,0 +1,126 @@
+body{
+    background-color: deepskyblue;
+}
+.wrapper{
+    position: absolute;
+     top: 50%;
+   margin-top:-200px;
+     left: 50%;
+   margin: -200px 0 0 -200px;
+ }
+ 
+ .face{
+   width: 300px;
+   height: 400px;
+   border: solid 2px #000;
+   background-color: pink;
+   border-radius: 200px 100px;
+ }
+ 
+ .left-eye{
+   width: 100px;
+   height: 120px;
+   border: solid 1px #000;
+   background-color: #fff;
+   border-radius: 90px;
+   position: relative;
+    left: 42px;
+    top: -310px;
+ }
+ .left-pupil{
+    width: 20px;
+    height: 20px;
+    border: solid 16px #000;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    left: 42px;
+    top: -510px;
+  }
+ .right-eye{
+    width: 100px;
+    height: 120px;
+    border: solid 1px #000;
+    background-color: #fff;
+    border-radius: 90px;
+    position: relative;
+    left: 140px;
+    top: -420px;
+  }
+  .right-pupil{
+    width: 20px;
+    height: 20px;
+    border: solid 16px #000;
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    left: 140px;
+    top: -560px;
+  }
+
+
+
+
+  .right-eyebrow{
+    width: 80px;
+    height: 8px;
+    border-bottom-right-radius:100px;
+    border-bottom-left-radius: 500px;
+    border: 10px solid #484848;
+    border-top: 0;
+    border-right: 0;
+    position: relative;
+    left: 150px;
+    top: -320px;
+    transform: rotate(-40deg);
+  }
+  .left-eyebrow{
+    width: 80px;
+    height: 8px;
+    border-bottom-right-radius:100px;
+    border-bottom-left-radius: 500px;
+    border: 10px solid #484848;
+    border-top: 0;
+    border-right: 0;
+    position: relative;
+    left: 65px;
+    top: -310px;
+    transform: rotate(-160deg);
+  }
+  
+ .mouth{
+    border-top: none;
+    border-top: 100px solid rgb(235, 103, 125);
+    -webkit-border-radius: 50px;
+    border-bottom: 100px solid rgb(235, 103, 125);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    height: 20px;
+    width: 175px;
+    position: relative;
+    left: 25px;
+    top: -960px;
+    transform: rotate(10deg);
+ }
+
+ .neck{
+    width: 50px;
+    height: 180px; 
+    border: solid 2px #000;
+   background-color: pink;
+   position: relative;
+    left: 85px;
+    top: -390px;
+
+ }
+ .belly{
+    width: 300px;
+    height: 300px;
+    border: solid 2px #000;
+    background-color: pink;
+    border-radius: 200px 100px;
+    position: relative;
+    left: 85px;
+    top: -590px;
+  }
+ 
