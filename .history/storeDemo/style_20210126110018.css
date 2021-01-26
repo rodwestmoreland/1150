@@ -1,0 +1,21 @@
+body{
+    margin-top:     5px;
+    margin-left:    5px;
+    margin-right:   5px;
+    font-family:    Droid+Sans;
+    
+}
+header{
+    
+}
+
+#storeName{
+    font-family:    Tangerine;
+    font-size:      80px;
+    font-weight:    bold;
+}
+#storeType{
+    font-family:    Inconsolata;
+    font-size:      50px;
+    font-weight:    100;
+}
