@@ -22,7 +22,6 @@ namespace _03_Conditions
 
             for (int i = 0; i<text.Length; i++)
             {
-                //if (text[i] == 'i' || text[i] == 'l')
                 if(text[i]=='i')
                 {
                     Console.WriteLine($"found an i: {text[i]}");
