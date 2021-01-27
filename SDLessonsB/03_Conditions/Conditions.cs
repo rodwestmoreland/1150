@@ -30,7 +30,6 @@ namespace _03_Conditions
                 {
                     Console.WriteLine($"found an L: {text[i]}");
                 }
-
             }
         }
     }
