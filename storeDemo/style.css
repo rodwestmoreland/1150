@@ -1,40 +1,86 @@
-body{
-    margin-top:     5px;
-    margin-left:    5px;
-    margin-right:   5px;
-    font-family:    Droid+Sans;
-    
+body {
+    font-family: Droid+Sans;
 }
-.container{
-    margin: 0 auto;
-}
-.inline{
 
+.container {
+    padding-bottom: 5px;
+}
+
+.announce {
+    font-family: Inconsolata;
+    font-size: medium;
+    font-weight: 500;
+    text-align: center;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col {}
+
+.top-left {
+    font-weight: 400;
+    font-size: 5em;
+    text-shadow: 3px 3px 5px #000;
+    position: absolute;
+    top: .5em;
+    left: 1.25em;
+    color: yellow;
+    font-size: 4em;
+}
+
+.mainRow {
+    color: rgb(151, 231, 31);
+}
+
+.resize {
+    width: 600px;
+    height: 400px;
+}
+
+.detailRow {}
+
+.detailImg {}
+
+.detailText {}
+
+.infoRow {
+    border: solid lightgray 1px;
+    padding-bottom: 5px;
+}
+
+.inline {
     display: inline-block;
 }
+
 .jumboRight-top {
     background-color: white;
 }
 
-.jumboRight-top form{
+.jumboRight-top form {
     margin-top: 2em;
     line-height: 4em;
     display: inline-block;
     vertical-align: middle;
-     
     width: 100%;
 }
-.storeName { 
-    
-    font-family:    Tangerine;
-    font-size:      80px;
-    font-weight:    bold;
-    
-    }
-.storeType{
-    font-family:    Inconsolata;
-    font-size:      40px;
-    font-weight:    100;
-    margin-top:     -50px;
-    margin-left:    .5em;
+
+.storeName {
+    font-family: Tangerine;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.storeType {
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: -50px;
+    margin-left: .5em;
+}
+
+footer a {
+    color: darkgray;
 }
