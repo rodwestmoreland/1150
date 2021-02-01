@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06_InheritenceClasses.People
 {
-    class User
+    public class User
     {
         private string _fName;
         private string _lName;

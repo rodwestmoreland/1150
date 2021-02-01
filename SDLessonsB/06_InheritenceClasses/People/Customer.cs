@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _06_InheritenceClasses.People
 {
-    class Customer:User
+    public class Customer:User
     {
         public int CustId { get; set; }
 
