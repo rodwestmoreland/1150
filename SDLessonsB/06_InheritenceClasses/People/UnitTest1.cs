@@ -8,6 +8,43 @@ namespace _06_InheritenceClasses
     public class UnitTest1
     {
         [TestMethod]
+        public void testThis()
+        {
+            int[] arr = new int[] { 2, 3, 2, 3, 3, 4, 4 };
+            //2 2  3 3  3  4 4
+            int pair = 0;
+            Array.Sort(arr);
+            int x = 0;
+            bool test = false;
+            foreach(int el in arr)
+            {
+                if (test)
+                {
+                    continue;
+                }
+                //Console.WriteLine(el.CompareTo()  ); 
+                if( x+1 < arr.Length)
+                {
+                    Console.WriteLine("outside IF el= " + el + " arr+1= " + arr[x + 1]);
+                    
+                    if (el == arr[x+1])
+                    {
+                        Console.WriteLine("match " + el + " arr+1 " + arr[x+1]);
+                        x++;
+                        test = true;
+                        continue;
+                    }
+                    test = false;
+                    x++;
+                }
+            }
+
+
+        }
+        
+
+        
+        [TestMethod]
         public void TestMethod1()
         {
             User newUser = new User("r@emal.io");

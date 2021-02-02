@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_InheritenceClasses", "06
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_RepoPattern", "07_RepoPattern\07_RepoPattern.csproj", "{8EEB2B9C-27A1-484B-B8D1-9D791E5EF792}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepoPattern_Tests", "08_RepoPattern_Tests\08_RepoPattern_Tests.csproj", "{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8EEB2B9C-27A1-484B-B8D1-9D791E5EF792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EEB2B9C-27A1-484B-B8D1-9D791E5EF792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EEB2B9C-27A1-484B-B8D1-9D791E5EF792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
