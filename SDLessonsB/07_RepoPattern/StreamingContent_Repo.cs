@@ -45,29 +45,27 @@ namespace _07_RepoPattern
             return _directory.Remove(ToDelete);
         }
 
-        //public List<StreamingContent> GetContents()
-        //{
-
-        //    foreach(StreamingContent title in _directory)
-        //    {
-        //        return title.Title;
-        //    }
-        //}
-        public string GetContents()
+        public List<StreamingContent> GetContents()
         {
-            int i = 0;
+            
+            return _directory;
+        }
+
+        public List<StreamingContent> GetFamilyContent()
+        {
+
+            List<StreamingContent> list = new List<StreamingContent>();
             foreach (StreamingContent movie in _directory)
             {
                 if (movie.IsFamilyFriendly)
                 {
-                i++;
-                return movie.Title + " -- hello " + i;
+
+                    return list;
 
                 }
             }
-            return "done";
+            return list;
         }
-
         public List<StreamingContent> GetFamily()
         {
             List<StreamingContent> family = new List<StreamingContent>();
@@ -85,14 +83,13 @@ namespace _07_RepoPattern
 
         public StreamingContent GetContentByTitle(string title)
         {
-            //return (StreamingContent)_directory.Where(c => c.Title == title);
             foreach (StreamingContent content in _directory)
             {
-                if (title == content.Title) { return content; }
+                if (title.ToLower() == content.Title.ToLower()) { return content; }
             }
             return null;
         }
 
-    }// class
-    //method returns list of family content
+    }// \class
+
 }

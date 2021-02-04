@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_RepoPattern", "07_RepoPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepoPattern_Tests", "08_RepoPattern_Tests\08_RepoPattern_Tests.csproj", "{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_StreamingContent_Console", "09_StreamingContent_Console\09_StreamingContent_Console.csproj", "{75C1891B-BAA8-49AE-813D-2B07121742FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1630E3E4-C18D-4F4C-B16B-7BEDDB5B3C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75C1891B-BAA8-49AE-813D-2B07121742FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75C1891B-BAA8-49AE-813D-2B07121742FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75C1891B-BAA8-49AE-813D-2B07121742FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75C1891B-BAA8-49AE-813D-2B07121742FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

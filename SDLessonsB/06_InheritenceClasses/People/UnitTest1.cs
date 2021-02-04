@@ -10,34 +10,36 @@ namespace _06_InheritenceClasses
         [TestMethod]
         public void testThis()
         {
-            int[] arr = new int[] { 2, 3, 2, 3, 3, 4, 4 };
-            //2 2  3 3  3  4 4
-            int pair = 0;
+            int[] arr = new int[] {};
+            
             Array.Sort(arr);
+            int pair = 0;
             int x = 0;
             bool test = false;
+
             foreach(int el in arr)
-            {
-                if (test)
+            {  
+                if (test)               //used for moving forward if match is found
                 {
-                    continue;
+                    test = false;
+                    continue;           //shift or skip one foreach iteration
                 }
-                //Console.WriteLine(el.CompareTo()  ); 
+                
                 if( x+1 < arr.Length)
-                {
-                    Console.WriteLine("outside IF el= " + el + " arr+1= " + arr[x + 1]);
-                    
+                {                    
                     if (el == arr[x+1])
                     {
-                        Console.WriteLine("match " + el + " arr+1 " + arr[x+1]);
-                        x++;
+                        Console.WriteLine("match " + el);
+                        pair++;
+                        x+=2;           //shift over matches
                         test = true;
-                        continue;
+                        continue;       //break out of loop
                     }
                     test = false;
                     x++;
                 }
             }
+            Console.WriteLine("matches = " + pair);
 
 
         }

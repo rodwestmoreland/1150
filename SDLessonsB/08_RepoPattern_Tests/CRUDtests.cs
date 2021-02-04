@@ -96,12 +96,8 @@ namespace _08_RepoPattern_Tests
         [TestMethod]
         public void TestGetTitle()
         {
-            StreamingContent search = _repo.GetContentByTitle("WTH");
-
-            
+            StreamingContent search = _repo.GetContentByTitle("WTH");            
         }
-
-
 
         [TestMethod]
         public void UpdateContent()
@@ -121,9 +117,6 @@ namespace _08_RepoPattern_Tests
 
             Assert.IsTrue(wasDeleted);
         }
-
-
-
 
     }
 }

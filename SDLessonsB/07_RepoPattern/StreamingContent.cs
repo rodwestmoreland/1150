@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace _07_RepoPattern
 {
-    public enum GenreType { Kids, Drama, Suspense, Western, Horror, Comedy, SciFi, World }
-    public enum MaturityType { G, PG, PG13, NC17, R}
+    public enum GenreType { Kids = 1, Drama, Suspense, Western, Horror, Comedy, SciFi }
+    public enum MaturityType { G = 1, PG, PG13, NC17, R}
 
     public class StreamingContent
     {
