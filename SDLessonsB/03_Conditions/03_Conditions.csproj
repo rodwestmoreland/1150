@@ -49,6 +49,8 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\StreamingContent.cs" />
+    <Compile Include="Classes\StreamingContent_Repo.cs" />
     <Compile Include="Classes\Vehicle.cs" />
     <Compile Include="Conditions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

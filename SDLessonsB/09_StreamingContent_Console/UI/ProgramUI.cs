@@ -9,7 +9,7 @@ namespace _09_StreamingContent_Console.UI
 {
     public class ProgramUI
     {
-        private readonly StreamingContent_Repo _repo = new StreamingContent_Repo();
+        private readonly CT_Repo _repo = new CT_Repo();
         public void Run()
         {
             SeedContentList();
@@ -54,9 +54,9 @@ namespace _09_StreamingContent_Console.UI
                         Console.WriteLine("Please enter a valid number between 1 and 5.");
                         Console.ReadKey();
                         break;
-                }
-            }
-        }
+                }// \switch
+            }// \while
+        } // \RunMenu
 
 // ***** Create 
         private void CreateContent()

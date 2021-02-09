@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CT_CRUDtests.cs" />
     <Compile Include="CRUDtests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ContentTests.cs" />

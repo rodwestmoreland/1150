@@ -1,5 +1,6 @@
-﻿using _07_RepoPattern;
-using _07_RepoPattern.Content;
+﻿
+
+using _07_RepoPattern;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -7,106 +8,64 @@ using System.Collections.Generic;
 namespace _08_RepoPattern_Tests
 {
     [TestClass]
-    public class CRUDtests
+    public class CT_CRUDtests
     {
-        StreamingContent_Repo _repo;
-        StreamingContent _content;
+        CustomerTracker_Repo _repoCustomer;
+        CustomerTracker _contentCustomer;
 
         [TestInitialize]
-        public void Arrange()
+        public void Seed()
         {
-            _repo = new StreamingContent_Repo();
-            StreamingContent newMovie1 = new StreamingContent(
-                                "Nerd Quest",
-                                "Sci-fi movie - comedy",
-                                MaturityType.PG13,
-                                3,
-                                GenreType.SciFi);
+            _repoCustomer = new CustomerTracker_Repo();
+            CustomerTracker cust1 = new CustomerTracker(
+                                "Henry",
+                                1,
+                                33,
+                                new DateTime(2006, 10, 10)
+                                );
 
-            _repo = new StreamingContent_Repo();
-            StreamingContent newMovie2 = new StreamingContent(
-                                "Hitchhikers Guide",
-                                "Weird space comedy",
-                                MaturityType.R,
-                                5,
-                                GenreType.Comedy);
-
-            _repo = new StreamingContent_Repo();
-            StreamingContent newMovie3 = new StreamingContent(
-                                "Unforgiven",
-                                "Dark western",
-                                MaturityType.R,
-                                5,
-                                GenreType.Western);
-
-            _repo.AddContentToDirectory(newMovie1);
-            _repo.AddContentToDirectory(newMovie2);
-            _repo.AddContentToDirectory(newMovie3);
-
-            _content = new StreamingContent();
-
-            StreamingContent newMovie4 = new StreamingContent(
-                                "WTH",
-                                "Mystery",
-                                MaturityType.G,
+            _repoCustomer = new CustomerTracker_Repo();
+            CustomerTracker cust2 = new CustomerTracker(
+                                "Roberts",
                                 2,
-                                GenreType.Horror);
-            _repo.AddContentToDirectory(_content);
-            Console.WriteLine("Anything here now?");
+                                43,
+                                new DateTime(2020, 10, 10)
+                                );
 
-            Console.WriteLine(_repo.ContentCount);
-            Console.WriteLine("Titles : " + _repo.GetContents());
-            List<StreamingContent> family = _repo.GetFamily();
-            foreach (StreamingContent movie in family)
-            {
-                Assert.IsTrue(movie.IsFamilyFriendly);
-            }
-            Assert.AreEqual(2, family.Count);
+            _repoCustomer = new CustomerTracker_Repo();
+            CustomerTracker cust3 = new CustomerTracker(
+                                "Phillips",
+                                3,
+                                53,
+                                new DateTime(2021, 1, 10)
+                                );
 
-            Show show = new Show();
-            show.Title = "The New Show";
-            show.SeasonCount = 4;
+            _repoCustomer.AddCustomerToDirectory(cust1);
+            _repoCustomer.AddCustomerToDirectory(cust2);
+            _repoCustomer.AddCustomerToDirectory(cust3);
 
-            Episode episode1 = new Episode();
-            episode1.Title = "Roadwarrior";
-            Episode episode2 = new Episode();
-            episode2.Title = "Dingus";
+            _contentCustomer = new CustomerTracker();
 
-            _repo.AddContentToDirectory(show);
-        }
-
-        [TestMethod]
-        public void TestMethod1()
-        {
-
-            //StreamingContent    content = new StreamingContent(
-            //                    "Galaxy Quest",
-            //                    "Sci-fi movie - comedy",
-            //                    MaturityType.PG13,
-            //                    5,
-            //                    GenreType.Comedy);
-
-            //bool wasAdded = _repo.AddContentToDirectory(content);
-            //Console.WriteLine(_repo.ContentCount) ;
-            //Console.WriteLine(wasAdded);
-            //Console.WriteLine(content.Title);
+            Console.WriteLine("Names : " + _repoCustomer.GetContents());
             
         }
+
+       
 
         [TestMethod]
         public void TestGetTitle()
         {
-            StreamingContent search = _repo.GetContentByTitle("WTH");            
+            CustomerTracker search = _repoCustomer.GetContentById(1);            
         }
 
         [TestMethod]
         public void UpdateContent()
         {
-            StreamingContent updateMovie = new StreamingContent("Unforgiven","a new description",MaturityType.G,3,GenreType.Kids);
+            CustomerTracker updateCustomer = new CustomerTracker();
             bool wasUpdated = _repo.UpdateContent("Unforgiven", updateMovie);
 
             Assert.IsTrue(wasUpdated);
-            StreamingContent updatedMovie = _repo.GetContentByTitle("Unforgiven");
+            CustomerTracker updatedMovie = _repo.GetContentByTitle("Unforgiven");
             Console.WriteLine(updateMovie.Desc);
         }
 
