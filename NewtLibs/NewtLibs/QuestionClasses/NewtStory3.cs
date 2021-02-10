@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace NewtLibs
 {
-    public class NewtStory1
+    class NewtStory3
     {
-       
         public static List<string> Story()
         {
-            var setTitle = new Message("A Very Odd Day");
+            var setTitle = new Message("Story 3");
             setTitle.SetStoryTitle();
-
+            
             List<string> words = new List<string>();
 
             Console.WriteLine("Enter an athlete's name");

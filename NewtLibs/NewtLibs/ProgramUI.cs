@@ -57,8 +57,20 @@ namespace NewtLibs
                 case 2:
                     words = NewtStory2.Story();
                     break;
-
+                case 3:
+                    words = NewtStory3.Story();
+                    break;
+                //case 4:
+                //    words = NewtStory4.Story();
+                //    break;
+                //case 5:
+                //    words = NewtStory5.Story();
+                //    break;
+                //case 6:
+                //    words = NewtStory6.Story();
+                //    break;
             }
+            
 
             var storyComplete = new Dictionary<int, string>()
             {
