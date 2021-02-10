@@ -11,7 +11,8 @@ namespace DragonarGame.Classes
  
     public class Birds
     {
-       
+        public int MyInt { get; set; }
+
         public Birds()
         {
             

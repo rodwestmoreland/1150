@@ -9,6 +9,14 @@ namespace Repo_UnitTests
         [TestMethod]
         public void TestMethod1()
         {
+            HowOld(new DateTime(1970,10,10));
+        }
+
+        [TestMethod]
+        public static void HowOld(DateTime date)
+        {
+            TimeSpan age = DateTime.Now - date;
+            Console.WriteLine(age);
         }
     }
 }

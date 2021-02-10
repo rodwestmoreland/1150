@@ -35,6 +35,8 @@ namespace DragonarGame.UI
                 { "OrangebelliedParrot", 5000 }
             };
 
+
+
             birdPlay(ref life, ref sum, ref count, ref hunterPoint, ref hunterSum, birds, birdList);
 
             Console.WriteLine("--------------------------------------------");
